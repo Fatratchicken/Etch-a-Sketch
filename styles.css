@@ -15,14 +15,18 @@ body{
 
 .flexDiv {
     display: flex;
-    gap: 5px;
-    margin-bottom: 5px;
+    gap: 0px;
+    margin-bottom: 0px;
 
 }
 
 .cell {
-    width: 20px;
-    height: 20px;
+    width: 5px;
+    height: 5px;
 
     background-color: rgb(219, 219, 219);
+}
+
+.hover {
+    background-color: black;
 }
