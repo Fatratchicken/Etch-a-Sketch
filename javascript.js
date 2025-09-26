@@ -25,8 +25,6 @@ container.addEventListener('mouseover', (event) => {
     if (target.className == 'cell'){
         target.classList.add('hover');
     }
-
-
 })
 
 delButton.addEventListener('click', () => {
@@ -35,6 +33,16 @@ delButton.addEventListener('click', () => {
         element.classList.remove('hover');
     })
 
+})
+
+ratioButton.addEventListener('click', () => {
+    const flexDivs = document.querySelectorAll(".flexDiv");
+    flexDivs.forEach(element => {
+        element.remove();
+    })
+
+    const newRatio = prompt("Enter Dimension: (e.g. 64)");
+    createGrid(newRatio);
 
 })
 
