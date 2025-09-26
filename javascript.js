@@ -30,4 +30,6 @@ container.addEventListener('mouseover', (event) => {
 
 })
 
-createGrid(100);
+const ratio = prompt("Enter Dimension: (e.g. 64)");
+
+createGrid(ratio);
