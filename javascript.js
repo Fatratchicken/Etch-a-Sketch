@@ -19,9 +19,6 @@ function createGrid(ratio){
 
 container.addEventListener('mouseover', (event) => {
     const target = event.target;
-    console.log(1);
-
-    console.log(target.className);
 
     if (target.className == 'cell'){
         target.classList.add('hover');
