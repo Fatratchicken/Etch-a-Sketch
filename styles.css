@@ -1,0 +1,28 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+.flexDiv {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+
+    background-color: rgb(219, 219, 219);
+}
