@@ -19,11 +19,24 @@ function createGrid(ratio){
 
 }
 
+function randomRGB () {
+    const MAX = 255;
+    const MIN = 0;
+    rgbValues = [];
+
+    for (let i = 0; i<3; i++){
+        rgbValues.push(Math.floor(Math.random() * (MAX - MIN + 1)) + MIN);
+    }
+
+    return `rgb(${rgbValues[0]}, ${rgbValues[1]}, ${rgbValues[2]})`;
+}
+
 container.addEventListener('mouseover', (event) => {
     const target = event.target;
 
     if (target.className == 'cell'){
-        target.classList.add('hover');
+        /*target.classList.add('hover');*/
+        target.style.backgroundColor = randomRGB();
     }
 })
 
