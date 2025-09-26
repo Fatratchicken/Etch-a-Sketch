@@ -1,4 +1,6 @@
 const container = document.querySelector(".container");
+const delButton = document.getElementById("delete");
+const ratioButton = document.getElementById("ratio");
 
 function createGrid(ratio){
     for(let i=0; i<ratio; i++){
@@ -23,6 +25,15 @@ container.addEventListener('mouseover', (event) => {
     if (target.className == 'cell'){
         target.classList.add('hover');
     }
+
+
+})
+
+delButton.addEventListener('click', () => {
+    const cells = document.querySelectorAll(".hover");
+    cells.forEach(element => {
+        element.classList.remove('hover');
+    })
 
 
 })
